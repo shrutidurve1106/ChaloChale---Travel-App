@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChaloChale - Packages</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- navbar start -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-primary" href="#">ChaloChale</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="destinations.html"
+                      >Destination</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="packages.html"
+                      >Packages</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="booking.html"
+                      >Booking</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="conatct.html"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+        </div>
+      </div>
+    </div>
+
+    <main class="packages-page">
+      <section class="packages-heading text-center">
+        <div class="container">
+          <p class="packages-eyebrow mb-2">A trip for every kind of traveler</p>
+          <h1 class="fw-bold mb-3">Travel packages</h1>
+          <p class="packages-intro mb-0">
+            Pick your pace, find your place, and let the journey begin.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="container packages-section"
+        aria-label="Available travel packages"
+      >
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <article class="card package-card package-card--goa h-100">
+              <div class="package-card-banner">
+                <span>Beach escape</span>
+                <span class="package-mark" aria-hidden="true">GOA</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Goa beach getaway</h2>
+                <p class="package-description">
+                  Slow mornings, warm sands, and an easy coastal escape.
+                </p>
+                <p class="package-duration">
+                  <span>Duration</span><strong>5 days / 4 nights</strong>
+                </p>
+                <div class="package-price-wrap">
+                  <span class="package-price-label">Package price</span>
+                  <p class="package-price mb-0">₹12,499</p>
+                </div>
+                <a href="booking.html" class="btn package-button mt-auto"
+                  >Book this trip <span aria-hidden="true">&rarr;</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card package-card package-card--kashmir h-100">
+              <div class="package-card-banner">
+                <span>Mountain retreat</span>
+                <span class="package-mark" aria-hidden="true">KASHMIR</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Srinagar &amp; Kashmir</h2>
+                <p class="package-description">
+                  Take in serene lakes, mountain views, and the beauty of the
+                  valley.
+                </p>
+                <p class="package-duration">
+                  <span>Duration</span><strong>7 days / 6 nights</strong>
+                </p>
+                <div class="package-price-wrap">
+                  <span class="package-price-label">Package price</span>
+                  <p class="package-price mb-0">₹22,999</p>
+                </div>
+                <a href="booking.html" class="btn package-button mt-auto"
+                  >Book this trip <span aria-hidden="true">&rarr;</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card package-card package-card--pilgrimage h-100">
+              <div class="package-card-banner">
+                <span>Himalayan pilgrimage</span>
+                <span class="package-mark" aria-hidden="true">YATRA</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Kedarnath &amp; Badrinath</h2>
+                <p class="package-description">
+                  A memorable journey through sacred sites and dramatic mountain
+                  scenery.
+                </p>
+                <p class="package-duration">
+                  <span>Duration</span><strong>10 days / 9 nights</strong>
+                </p>
+                <div class="package-price-wrap">
+                  <span class="package-price-label">Package price</span>
+                  <p class="package-price mb-0">₹19,999</p>
+                </div>
+                <a href="booking.html" class="btn package-button mt-auto"
+                  >Book this trip <span aria-hidden="true">&rarr;</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p class="mb-0">
+        &copy; 2026 ChaloChale Travel App | Designed with Bootstrap.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

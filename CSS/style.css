@@ -531,3 +531,92 @@
 		font-size: 2.5rem;
 	}
 }
+
+.signup-page {
+	min-height: 60vh;
+	background: #f4f7f3;
+}
+
+.signin-body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.signin-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.signin-page {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	background: #f4f7f3;
+}
+
+.signup-panel {
+	padding: 2rem;
+	border: 1px solid #e3e9e3;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 12px 32px rgb(24 59 58 / 10%);
+}
+
+.signup-panel h1 {
+	color: #183b3a;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2rem;
+}
+
+.signup-intro {
+	color: #657674;
+}
+
+@media (max-width: 575.98px) {
+	.signup-panel {
+		padding: 1.5rem;
+	}
+}
+
+.booking-page {
+	min-height: 60vh;
+	background: #f4f7f3;
+}
+
+.booking-panel {
+	padding: 2rem;
+	border: 1px solid #e3e9e3;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 12px 32px rgb(24 59 58 / 10%);
+}
+
+.booking-panel h1 {
+	color: #183b3a;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 2.25rem;
+}
+
+.booking-eyebrow {
+	color: #176b5b;
+	font-size: 0.78rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.booking-intro,
+.booking-optional {
+	color: #657674;
+}
+
+@media (max-width: 575.98px) {
+	.booking-panel {
+		padding: 1.35rem;
+	}
+
+	.booking-panel h1 {
+		font-size: 1.9rem;
+	}
+}

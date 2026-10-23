@@ -8,9 +8,12 @@ function closeModal() {
   dialog.close();
 }
 
-function submitBooking() {
+function submitBooking(event) {
+  event.preventDefault();
   const dialog = document.getElementById("exampleDialog");
 
   alert("Your booking request has been submitted!");
-  dialog.close();
+  if (dialog?.open) {
+    dialog.close();
+  }
 }

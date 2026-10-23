@@ -30,61 +30,41 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <a class="navbar-brand text-primary" href="#">ChaloChale</a>
+
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a
-                      class="nav-link active text-white"
-                      aria-current="page"
-                      href="index.html"
-                      >Home</a
-                    >
+                    <a class="nav-link text-white" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link active text-white"
-                      aria-current="page"
-                      href="destinations.html"
+                    <a class="nav-link text-white" href="destinations.html"
                       >Destination</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link active text-white"
-                      aria-current="page"
-                      href="packages.html"
+                    <a class="nav-link text-white" href="packages.html"
                       >Packages</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link active text-white"
-                      aria-current="page"
-                      href="booking.html"
+                    <a class="nav-link text-white" href="booking.html"
                       >Booking</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link active text-white"
-                      aria-current="page"
-                      href="conatct.html"
+                    <a class="nav-link text-white" href="conatct.html"
                       >Contact</a
                     >
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
+
+                <!-- SignUp and SignIn Buttons -->
+                <div class="d-flex gap-2">
+                  <a href="signup.html" class="btn btn-warning">SignUp</a>
+                  <a href="signin.html" class="btn btn-warning">SignIn</a>
+                </div>
               </div>
             </div>
           </nav>
@@ -92,6 +72,120 @@
         </div>
       </div>
     </div>
+
+    <main class="booking-page">
+      <div class="container py-4 py-md-5">
+        <div class="row justify-content-center">
+          <section class="col-12 col-lg-9 col-xl-8">
+            <div class="booking-panel">
+              <header class="mb-4">
+                <p class="booking-eyebrow mb-2">
+                  Your next journey starts here
+                </p>
+                <h1 class="mb-2">Plan your trip</h1>
+                <p class="booking-intro mb-0">
+                  Share a few details and we will help you plan your getaway.
+                </p>
+              </header>
+
+              <form id="bookingForm" onsubmit="submitBooking(event)">
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="bookingName" class="form-label"
+                      >Full name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="bookingName"
+                      name="name"
+                      placeholder="Enter your name"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="bookingEmail" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="bookingEmail"
+                      name="email"
+                      placeholder="Enter your email"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="bookingDestination" class="form-label"
+                      >Select destination</label
+                    >
+                    <select
+                      id="bookingDestination"
+                      name="destination"
+                      class="form-select"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Choose a destination
+                      </option>
+                      <option value="Goa">Goa</option>
+                      <option value="Manali">Manali</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="Kashmir">Kashmir</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="bookingDate" class="form-label"
+                      >Travel date</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="bookingDate"
+                      name="travelDate"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="bookingPeople" class="form-label"
+                      >Number of people</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="bookingPeople"
+                      name="people"
+                      placeholder="Enter number of people"
+                      min="1"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="bookingMessage" class="form-label"
+                      >Message
+                    </label>
+                    <textarea
+                      class="form-control"
+                      id="bookingMessage"
+                      name="message"
+                      rows="4"
+                      placeholder="Any special requests?"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-success w-100">
+                      Submit booking request
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">
       <p class="mb-0">

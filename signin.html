@@ -77,47 +77,61 @@
       <main class="signin-page">
         <div class="container">
           <div class="row justify-content-center">
-            <section class="col-12 col-sm-10 col-md-8 col-lg-6 my-5">
-              <div class="signup-panel">
-                <h1 class="text-center mb-2">Welcome back</h1>
-                <p class="signup-intro text-center mb-4">
-                  Sign in to continue planning your next journey.
-                </p>
-                <form class="row g-3">
-                  <div class="col-12">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="inputEmail4"
-                      name="email"
-                      autocomplete="email"
-                      required
-                    />
+            <section class="col-12 col-lg-10 col-xl-9 my-4 my-lg-5">
+              <div class="auth-card auth-card--signin">
+                <aside class="auth-story">
+                  <span class="auth-story-tag">WELCOME BACK</span>
+                  <div>
+                    <p class="auth-story-kicker">Your next chapter is calling.</p>
+                    <h1>Pick up where<br />the wonder begins.</h1>
+                    <p class="auth-story-copy">
+                      Sign in to keep your travel plans, favorite places, and
+                      next big idea all in one place.
+                    </p>
+                    <span class="auth-story-mark" aria-hidden="true">ChaloChale&nbsp; <span>✦</span></span>
                   </div>
-                  <div class="col-12">
-                    <label for="inputPassword4" class="form-label"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="inputPassword4"
-                      name="password"
-                      autocomplete="current-password"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary w-100">
-                      Sign In
-                    </button>
-                  </div>
-                </form>
-                <p class="text-center mt-4 mb-0">
-                  Don't have an account?
-                  <a href="signup.html">Sign Up</a>
-                </p>
+                </aside>
+                <div class="auth-form-panel">
+                  <p class="auth-eyebrow">YOUR JOURNEY CONTINUES</p>
+                  <h2>Welcome back</h2>
+                  <p class="auth-intro">
+                    Sign in to continue planning your next journey.
+                  </p>
+                  <form class="row g-3">
+                    <div class="col-12">
+                      <label for="inputEmail4" class="form-label">Email address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail4"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="inputPassword4"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 pt-1">
+                      <button type="submit" class="btn auth-submit w-100">
+                        <span>Sign in</span><span aria-hidden="true">→</span>
+                      </button>
+                    </div>
+                  </form>
+                  <p class="auth-switch mb-0">
+                    New to ChaloChale? <a href="signup.html">Create an account</a>
+                  </p>
+                </div>
               </div>
             </section>
           </div>

@@ -75,117 +75,132 @@
       </div>
     </div>
 
-    <main class="booking-page">
-      <div class="container py-4 py-md-5">
-        <div class="row justify-content-center">
-          <section class="col-12 col-lg-9 col-xl-8">
-            <div class="booking-panel">
-              <header class="mb-4">
-                <p class="booking-eyebrow mb-2">
-                  Your next journey starts here
-                </p>
-                <h1 class="mb-2">Plan your trip</h1>
-                <p class="booking-intro mb-0">
-                  Share a few details and we will help you plan your getaway.
-                </p>
-              </header>
-
-              <form id="bookingForm" onsubmit="submitBooking(event)">
-                <div class="row g-3">
-                  <div class="col-12 col-md-6">
-                    <label for="bookingName" class="form-label"
-                      >Full name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="bookingName"
-                      name="name"
-                      placeholder="Enter your name"
-                      autocomplete="name"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="bookingEmail" class="form-label">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="bookingEmail"
-                      name="email"
-                      placeholder="Enter your email"
-                      autocomplete="email"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="bookingDestination" class="form-label"
-                      >Select destination</label
-                    >
-                    <select
-                      id="bookingDestination"
-                      name="destination"
-                      class="form-select"
-                      required
-                    >
-                      <option value="" selected disabled>
-                        Choose a destination
-                      </option>
-                      <option value="Goa">Goa</option>
-                      <option value="Manali">Manali</option>
-                      <option value="Kerala">Kerala</option>
-                      <option value="Jaipur">Jaipur</option>
-                      <option value="Kashmir">Kashmir</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="bookingDate" class="form-label"
-                      >Travel date</label
-                    >
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="bookingDate"
-                      name="travelDate"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="bookingPeople" class="form-label"
-                      >Number of people</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="bookingPeople"
-                      name="people"
-                      placeholder="Enter number of people"
-                      min="1"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="bookingMessage" class="form-label"
-                      >Message
-                    </label>
-                    <textarea
-                      class="form-control"
-                      id="bookingMessage"
-                      name="message"
-                      rows="4"
-                      placeholder="Any special requests?"
-                    ></textarea>
-                  </div>
-                  <div class="col-12 pt-2">
-                    <button type="submit" class="btn btn-success w-100">
-                      Submit booking request
-                    </button>
-                  </div>
-                </div>
-              </form>
+    <main class="booking-page booking-page--trip">
+      <div class="container booking-container">
+        <section class="booking-layout" aria-labelledby="bookingTitle">
+          <aside class="booking-story">
+            <div class="booking-story-content">
+              <span class="booking-story-tag">MADE FOR YOUR NEXT “WOW”</span>
+              <p class="booking-story-kicker">A little planning. A lot of living.</p>
+              <h2>Go where your<br />heart takes you.</h2>
+              <p class="booking-story-copy">
+                Tell us what you’re dreaming of. We’ll help turn it into a trip
+                worth talking about.
+              </p>
+              <ul class="booking-highlights">
+                <li><span aria-hidden="true">01</span> Thoughtfully planned trips</li>
+                <li><span aria-hidden="true">02</span> Personal travel support</li>
+                <li><span aria-hidden="true">03</span> Memories, your way</li>
+              </ul>
             </div>
-          </section>
-        </div>
+            <p class="booking-photo-credit">Find your kind of somewhere.</p>
+          </aside>
+
+          <div class="booking-panel">
+            <header class="booking-header">
+              <p class="booking-eyebrow mb-2">YOUR NEXT JOURNEY STARTS HERE</p>
+              <h1 id="bookingTitle" class="mb-2">Let’s plan your trip</h1>
+              <p class="booking-intro mb-0">
+                A few details are all we need to get things rolling.
+              </p>
+            </header>
+
+            <form id="bookingForm" onsubmit="submitBooking(event)">
+              <div class="booking-form-heading">
+                <span class="booking-form-icon" aria-hidden="true">✦</span>
+                <div>
+                  <h2>Tell us about your trip</h2>
+                  <p>We’ll be in touch to help with the details.</p>
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="bookingName" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="bookingName"
+                    name="name"
+                    placeholder="e.g. Alex Morgan"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="bookingEmail" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="bookingEmail"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="bookingDestination" class="form-label">Where to?</label>
+                  <select
+                    id="bookingDestination"
+                    name="destination"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" selected disabled>Choose a destination</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Kashmir">Kashmir</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="bookingDate" class="form-label">When would you like to go?</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="bookingDate"
+                    name="travelDate"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="bookingPeople" class="form-label">Travelers</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="bookingPeople"
+                    name="people"
+                    placeholder="Number of travelers"
+                    min="1"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="bookingMessage" class="form-label">
+                    Anything else we should know? <span class="booking-label-optional">Optional</span>
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="bookingMessage"
+                    name="message"
+                    rows="3"
+                    placeholder="A special request, a must-see, or just your travel vibe..."
+                  ></textarea>
+                </div>
+                <div class="col-12 pt-1">
+                  <button type="submit" class="btn booking-submit w-100">
+                    <span>Send my trip request</span>
+                    <span aria-hidden="true">→</span>
+                  </button>
+                  <p class="booking-privacy mb-0">
+                    No commitment — just the first step to somewhere wonderful.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
     </main>
 

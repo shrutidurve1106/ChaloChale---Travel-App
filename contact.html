@@ -75,83 +75,97 @@
       </div>
     </div>
 
-    <main class="booking-page">
-      <div class="container py-4 py-md-5">
-        <div class="row justify-content-center">
-          <section class="col-12 col-lg-8 col-xl-7">
-            <div class="booking-panel">
-              <header class="mb-4">
-                <p class="booking-eyebrow mb-2">We'd love to hear from you</p>
-                <h1 class="mb-2">Get in touch</h1>
-                <p class="booking-intro mb-0">
-                  Send us a note and our travel team will be happy to help.
-                </p>
-              </header>
-
-              <form id="contactForm">
-                <div class="row g-3">
-                  <div class="col-12 col-md-6">
-                    <label for="contactName" class="form-label"
-                      >Full name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contactName"
-                      name="name"
-                      placeholder="Enter your name"
-                      autocomplete="name"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="contactEmail" class="form-label">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="contactEmail"
-                      name="email"
-                      placeholder="Enter your email"
-                      autocomplete="email"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="contactSubject" class="form-label"
-                      >Subject</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contactSubject"
-                      name="subject"
-                      placeholder="What can we help with?"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="contactMessage" class="form-label"
-                      >Message</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="contactMessage"
-                      name="message"
-                      rows="5"
-                      placeholder="Write your message here"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="col-12 pt-2">
-                    <button type="submit" class="btn btn-primary w-100">
-                      Send message
-                    </button>
-                  </div>
-                </div>
-              </form>
+    <main class="contact-page">
+      <div class="container contact-container">
+        <section class="contact-layout" aria-labelledby="contactTitle">
+          <aside class="contact-story">
+            <div class="contact-story-top">
+              <span class="contact-story-tag">LET’S TALK TRAVEL</span>
             </div>
-          </section>
-        </div>
+            <div class="contact-story-bottom">
+              <p class="contact-story-kicker">Big ideas start with a hello.</p>
+              <h1>We’re here for<br />the whole journey.</h1>
+              <p class="contact-story-copy">
+                Questions, ideas, or a trip you can’t stop thinking about?
+                Tell us a little about it and our travel team will be happy to help.
+              </p>
+              <div class="contact-story-note">
+                <span class="contact-story-sparkle" aria-hidden="true">✦</span>
+                <span>Thoughtful people. Better journeys.</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="contact-form-panel">
+            <header class="contact-header">
+              <p class="contact-eyebrow">WE’D LOVE TO HEAR FROM YOU</p>
+              <h2 id="contactTitle">Get in touch</h2>
+              <p class="contact-intro">
+                Drop us a note and let’s figure out your next step.
+              </p>
+            </header>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="contactName" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    name="name"
+                    placeholder="Your name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="contactEmail" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="contactSubject" class="form-label">What can we help with?</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactSubject"
+                    name="subject"
+                    placeholder="Trip planning, a question, or anything else"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label">Your message</label>
+                  <textarea
+                    class="form-control"
+                    id="contactMessage"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us what’s on your mind..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12 pt-1">
+                  <button type="submit" class="btn contact-submit w-100">
+                    <span>Send us a message</span>
+                    <span aria-hidden="true">→</span>
+                  </button>
+                  <p class="contact-form-note mb-0">
+                    Your next great story could start right here.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
     </main>
 
